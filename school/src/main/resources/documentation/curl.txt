@@ -1,0 +1,15 @@
+STUDENTS END POINTS
+-----------------------
+curl -X GET http://localhost:2019/students/students
+curl -X GET http://localhost:2019/students/student/1
+curl -X GET http://localhost:2019/students/student/namelike/sally
+curl -X POST -H “Content-Type: application/json” -d “{\“studname\“:\“Austin\“}” http://localhost:2019/students/Student
+curl -X PUT -H “Content-Type: application/json” -d “{\“studname\“:\“Test\“}” http://localhost:2019/students/Student/1
+curl -X DELETE http://localhost:2019/students/student/1
+
+
+COURSE END POINTS
+-----------------------
+curl -X GET http://localhost:2019/courses/courses
+curl -X GET http://localhost:2019/courses/studcount
+curl -X DELETE http://localhost:2019/courses/courses/1
